@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">ABOUT</a>
+                </li>
+                <!--
+                <li class="nav-item dropdown">
+                    <a id="musicNav" class="nav-link" role="button" href="#" data-bs-toggle="dropdown">
+                        <span>MUSIC</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                        <li><a class="dropdown-item" href="/music">Latest Releases</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/chroma9">Chroma9</a></li>
+                    </ul>
+                </li>
+                -->
+                <li class="nav-item dropdown">
+                    <a id="newsNav" class="nav-link" role="button" href="#" data-bs-toggle="dropdown">
+                        <span>NEWS</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                        <li><a class="dropdown-item" href="/news">Latest News</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        {% for post in site.posts limit:10 %}
+                        <li><a class="dropdown-item" href="{{ post.url }}">{{ post.title }} ({{ post.date | date_to_string }})</a>
+                        {% endfor %}
+                    </ul>
+                </li>
+                <!--
+                <li class="nav-item dropdown">
+                    <a id="streamNav" class="nav-link" role="button" href="#" data-bs-toggle="dropdown">
+                        <span>STREAMS</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                        <li><a class="dropdown-item" href="/streams">Stream Team</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="https://youtube.com/Chroma9">Chroma9</a></li>
+                        <li><a class="dropdown-item" href="https://youtube.com/OrionTheStarhog">OrionTheStarhog</a></li>
+                        <li><a class="dropdown-item" href="https://youtube.com/">KarmaBytes</a></li>
+                    </ul>
+                </li> 
+                <li class="nav-item dropdown">
+                    <a id="gamesNav" class="nav-link" role="button" href="#" data-bs-toggle="dropdown">
+                        <span>GAMES</span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                        <li><a class="dropdown-item" href="/games">All Games</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="/forza-horizon-5">Forza Horizon 5</a></li>
+                        <li><a class="dropdown-item" href="/dead-by-daylight">Dead by Daylight</a></li>
+                        <li><a class="dropdown-item" href="/team-fight-tactics">Team Fight Tactics</a></li>
+                        <li><a class="dropdown-item" href="/league-of-legends">League of Legends</a></li>
+                    </ul>
+                </li> 
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">CONTACT</a>
+                </li>
+                -->
+            </ul>
+        </div>
+    </div>
+</nav>
