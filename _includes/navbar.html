@@ -30,24 +30,23 @@
                     <ul class="dropdown-menu dropdown-menu-dark bg-dark">
                         <li><a class="dropdown-item" href="/news">Latest News</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        {% for post in site.posts limit:10 %}
-                        <li><a class="dropdown-item" href="{{ post.url }}">{{ post.title }} ({{ post.date | date_to_string }})</a>
+                        {% for article in site.posts limit:10 %}
+                        <li><a class="dropdown-item" href="{{ article.url }}">{{ article.title }} ({{ article.date | date_to_string }})</a>
                         {% endfor %}
                     </ul>
                 </li>
-                <!--
                 <li class="nav-item dropdown">
                     <a id="streamNav" class="nav-link" role="button" href="#" data-bs-toggle="dropdown">
                         <span>STREAMS</span>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark bg-dark">
-                        <li><a class="dropdown-item" href="/streams">Stream Team</a></li>
+                        <li><a class="dropdown-item" href="#">Stream Team</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="https://youtube.com/Chroma9">Chroma9</a></li>
                         <li><a class="dropdown-item" href="https://youtube.com/OrionTheStarhog">OrionTheStarhog</a></li>
-                        <li><a class="dropdown-item" href="https://youtube.com/">KarmaBytes</a></li>
                     </ul>
-                </li> 
+                </li>
+                <!--
                 <li class="nav-item dropdown">
                     <a id="gamesNav" class="nav-link" role="button" href="#" data-bs-toggle="dropdown">
                         <span>GAMES</span>
