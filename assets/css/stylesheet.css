@@ -1,0 +1,23 @@
+:root {
+    --color-white: #ffffff;
+    --color-light: #e0e0e0;
+    --color-black: #000000;
+    --color-dark: #2c2c2c;
+    --font-brand: 'Audiowide';
+    --font-main: 'Ubuntu';
+}
+
+a               { text-decoration: none !important;}
+
+.font-main      { font-family: var(--font-main) !important; }
+.font-brand     { font-family: var(--font-brand) !important; }
+
+.text-white     { color: var(--color-white) !important; }
+.text-light     { color: var(--color-light) !important; }
+.text-black     { color: var(--color-black) !important; }
+.text-dark      { color: var(--color-dark) !important; }
+
+.bg-white       { background-color: var(--color-white) !important; }
+.bg-light       { background-color: var(--color-light) !important; }
+.bg-black       { background-color: var(--color-black) !important; }
+.bg-dark        { background-color: var(--color-dark) !important; }
