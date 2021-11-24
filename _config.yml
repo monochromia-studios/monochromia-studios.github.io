@@ -1,3 +1,7 @@
 title: Monochromia Studios
 description: Your Entertainment. Our Industry.
 color: 0a0a0a
+
+collections:
+  music:
+  artists:

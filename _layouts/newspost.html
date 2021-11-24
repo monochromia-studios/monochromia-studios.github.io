@@ -34,7 +34,7 @@
                 <div class="col-md-8">
                     <small class="text-muted mb-5">
                         {% for tag in page.tags %}
-                        <a href="/topics/{{ tag }}">#{{ tag }}</a>
+                        <a href="/tags/{{ tag }}">#{{ tag }}</a>
                         {% endfor %}
                         <span> &bull; </span>
                         <span>Posted </span>
@@ -59,7 +59,7 @@
                 <div class="col-md-4">
                     <div id="postTags" class="bg-dark rounded">
                         <div class="m-2">
-                            <h5>News Topics</h5>
+                            <h5>News Tags</h5>
                             <p class="lead">
                             {% for tag in site.tags %}
                                 <a href="/tags/{{ tag[0] }}">#{{ tag[0] }}</a>

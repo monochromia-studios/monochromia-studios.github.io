@@ -54,7 +54,7 @@
                         </small>
                         <br>
                         <small class="text-muted">
-                            <span>Topics: </span>
+                            <span>Tags: </span>
                             {% for tag in article.tags %}
                             <a href="/tags/{{ tag }}">#{{ tag }}</a>
                             {% endfor %}
@@ -65,7 +65,7 @@
             </div>
             <div class="col-md-4">
                 <div class="bg-dark p-2 rounded">
-                    <h1>News By Topic:</h1>
+                    <h1>News Tags</h1>
                     {% for tag in site.tags %}
                     <a href="/tags/{{ tag[0] }}">#{{ tag[0] }}</a>
                     {% endfor %}

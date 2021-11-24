@@ -21,3 +21,11 @@ a               { text-decoration: none !important;}
 .bg-light       { background-color: var(--color-light) !important; }
 .bg-black       { background-color: var(--color-black) !important; }
 .bg-dark        { background-color: var(--color-dark) !important; }
+
+.cclass-D       { background-color: #00a4ff !important; }
+.cclass-C       { background-color: #ffaf00 !important; }
+.cclass-B       { background-color: #ff6d12 !important; }
+.cclass-A       { background-color: #ea4e14 !important; }
+.cclass-S1      { background-color: #9d56ff !important; }
+.cclass-S2      { background-color: #3460fc !important; }
+.cclass-X       { background-color: #4adf25 !important; }
