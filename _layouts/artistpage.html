@@ -42,7 +42,11 @@
                         <div class="card-body">
                             <h5 class="card-title"><a href="{{ release.link }}">{{ release.title }}</a></h5>
                             <small class="text-muted">
-                                <span>by <a href="/releases/{{ release.musician }}">{{ release.artist }}</a></span>
+                                <span>by <span class="text-white">{{ release.artist }}</span></span>
+                            </small>
+                            <br>
+                            <small class="text-muted">
+                                <span>Released by: <a href="/releases/{{ release.musician }}">{{ release.musician }}</a></span>
                             </small>
                             <br>
                             <small class="text-muted">
